@@ -1,0 +1,5 @@
+.gradle/
+.mcreator/
+.settings/
+build/
+run/

@@ -1,0 +1,132 @@
+{
+  "mod_elements": [
+    {
+      "name": "Exporter",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "exportercommandprocedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/seba0456/mctocsv/procedures/ExporterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExportWorldToJson",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "export_world_to_csv",
+      "metadata": {
+        "files": [
+          "src/main/java/net/seba0456/mctocsv/command/ExportWorldToJsonCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "CalculateBlocks",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "calculate_blocks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/seba0456/mctocsv/procedures/CalculateBlocksProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "x1",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "y1",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "z1",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "x2",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "y2",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    },
+    {
+      "name": "z2",
+      "type": "number",
+      "scope": "global",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {}
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "minecraft_to_csv",
+    "modName": "Minecraft to CSV",
+    "version": "1.0.1",
+    "description": "Simple mod that exports piece of your world to csv file.",
+    "author": "Sebastian Legieziński (seba0456), MCreator",
+    "websiteURL": "https://legacy.curseforge.com/minecraft/mc-mods/mc-structure-to-csv",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about, https://mcreator.net/plugin/64638/file-creator",
+    "modElementsPackage": "net.seba0456.mctocsv",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}

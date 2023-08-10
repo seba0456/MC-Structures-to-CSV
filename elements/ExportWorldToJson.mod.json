@@ -1,0 +1,9 @@
+{
+  "_fv": 43,
+  "_type": "command",
+  "definition": {
+    "commandName": "man_export_csv",
+    "permissionLevel": "4",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"blockpos\"><field name=\"name\">position1</field><statement name=\"args\"><block type=\"blockpos\"><field name=\"name\">positon2</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">Exporter</field></block></statement></block></statement></block></next></block></xml>"
+  }
+}
