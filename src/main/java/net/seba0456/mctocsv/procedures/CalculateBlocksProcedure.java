@@ -58,7 +58,7 @@ public class CalculateBlocksProcedure {
 				HighestX = MinecraftToCsvModVariables.x2;
 				LowestX = MinecraftToCsvModVariables.x1;
 			}
-			IterationsX = Math.abs(HighestX) + Math.abs(LowestX);
+			IterationsX = Math.abs(HighestX - LowestX);
 			if (MinecraftToCsvModVariables.y1 > MinecraftToCsvModVariables.y2) {
 				HighestY = MinecraftToCsvModVariables.y1;
 				LowestY = MinecraftToCsvModVariables.y2;
@@ -66,7 +66,8 @@ public class CalculateBlocksProcedure {
 				HighestY = MinecraftToCsvModVariables.y2;
 				LowestY = MinecraftToCsvModVariables.y1;
 			}
-			IterationsY = Math.abs(HighestY) + Math.abs(LowestY);
+			IterationsY = Math.abs(HighestY - LowestY);
+
 			if (MinecraftToCsvModVariables.z1 > MinecraftToCsvModVariables.z2) {
 				HighestZ = MinecraftToCsvModVariables.z1;
 				LowestZ = MinecraftToCsvModVariables.z2;
@@ -74,7 +75,7 @@ public class CalculateBlocksProcedure {
 				HighestZ = MinecraftToCsvModVariables.z2;
 				LowestZ = MinecraftToCsvModVariables.z1;
 			}
-			IterationsZ = Math.abs(HighestZ) + Math.abs(LowestZ);
+			IterationsZ = Math.abs(HighestZ - LowestZ);
 			CurrentX = LowestX;
 			CurrentY = LowestY;
 			CurrentZ = LowestZ;

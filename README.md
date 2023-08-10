@@ -2,6 +2,8 @@ This is a very simple mod that adds a new command to the game: `man_export_csv 
 
 Keep in mind that this mod may cause lag during the export process, so make sure to select reasonable dimensions for the selection zone. Make sure to not select the same coordinates, each number should be unique.
 
+You can get `Selection Wand` from Redstone tab, select blocks just like in world edit and then run command `wand_export_csv`.
+
 [Discord support](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fdiscord.com%252finvite%252f9d6RBrhqtg)
 
 If you have any ideas for features, let me know about it.

@@ -30,6 +30,7 @@
     {
       "name": "ExportWorldToJson",
       "type": "command",
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "export_world_to_csv",
@@ -61,6 +62,122 @@
           }
         ]
       }
+    },
+    {
+      "name": "SelectionWand",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "selection_wand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minecraft_to_csv/models/item/selection_wand.json",
+          "src/main/java/net/seba0456/mctocsv/item/SelectionWandItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CheckBlockDestruction",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "left_mouse_button_selection",
+      "metadata": {
+        "files": [
+          "src/main/java/net/seba0456/mctocsv/procedures/CheckBlockDestructionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/SelectionWandProcedures"
+    },
+    {
+      "name": "RightMouseSelection",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "right_mouse_selection",
+      "metadata": {
+        "files": [
+          "src/main/java/net/seba0456/mctocsv/procedures/RightMouseSelectionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/SelectionWandProcedures"
+    },
+    {
+      "name": "WandCommand",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wand_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/seba0456/mctocsv/procedures/WandCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SelectionWandProcedures"
+    },
+    {
+      "name": "WandSelectionCommand",
+      "type": "command",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wand_selection_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/seba0456/mctocsv/command/WandSelectionCommandCommand.java"
+        ]
+      },
+      "path": "~/SelectionWandProcedures"
     }
   ],
   "variable_elements": [
@@ -103,16 +220,26 @@
   ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "pl_pl": {
+      "item.minecraft_to_csv.selection_wand": "Różdżka zaznaczenia"
+    },
+    "en_us": {
+      "item.minecraft_to_csv.selection_wand": "Selection Wand"
+    }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "SelectionWandProcedures",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "minecraft_to_csv",
     "modName": "Minecraft to CSV",
-    "version": "1.0.1",
+    "version": "1.1.1",
     "description": "Simple mod that exports piece of your world to csv file.",
     "author": "Sebastian Legieziński (seba0456), MCreator",
     "websiteURL": "https://legacy.curseforge.com/minecraft/mc-mods/mc-structure-to-csv",

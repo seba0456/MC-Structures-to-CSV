@@ -16,6 +16,8 @@ package net.seba0456.mctocsv;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import net.seba0456.mctocsv.init.MinecraftToCsvModItems;
+
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.NetworkEvent;
@@ -46,6 +48,8 @@ public class MinecraftToCsvMod {
 	public MinecraftToCsvMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		MinecraftToCsvModItems.REGISTRY.register(bus);
 
 	}
 
