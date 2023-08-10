@@ -1,4 +1,4 @@
-This is a very simple mod that adds a new command to the game: `man_export_csv <pos1> <pos2>`. This command will list all block IDs, coordinates, and facing directions to a `.csv` file. Your file will be saved in \config\exported as world_name.csv.
+This is a very simple mod that adds a new command to the game: `man_export_csv <pos1> <pos2>`. This command will list all block IDs, coordinates, and facing directions to a `.csv` file. Your file will be saved in `\config\exported as world_name.csv`.
 
 Keep in mind that this mod may cause lag during the export process, so make sure to select reasonable dimensions for the selection zone. Make sure to not select the same coordinates, each number should be unique.
 
